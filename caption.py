@@ -13,7 +13,7 @@ def query(uploaded_file):
 uploaded_file = st.file_uploader("Upload an image", type="jpg")
 
 if uploaded_file is not None:
-    if st.button("Click"):
+    if st.button("Generate Caption"):
         output = query(uploaded_file)
         st.write(output)
 
