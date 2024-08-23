@@ -4,6 +4,8 @@ import streamlit as st
 API_URL = "https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-large"
 headers = {"Authorization": "Bearer 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"}
 
+st.title("Captivate AI")
+
 def query(uploaded_file):
     # Read the content of the uploaded file directly
     data = uploaded_file.read()
